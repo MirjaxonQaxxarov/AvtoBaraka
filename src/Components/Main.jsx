@@ -1,5 +1,6 @@
 import {Modal} from "./Modal.jsx";
 import {useState} from "react";
+import {Request} from "./Request.jsx";
 
 export function Main({users,count,appendUser}) {
 const [showModal, setShowModal] = useState(false);
@@ -9,6 +10,10 @@ const  openModal = ()=>{
     return (
 
         <div className="Main">
+            <div className="container">
+                <Request></Request>
+            </div>
+
             {showModal &&<Modal openModal={openModal} appendUser={appendUser}/>}
             <button className="createBTN" onClick={openModal}>Create User</button>
             {count>0 &&

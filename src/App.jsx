@@ -11,12 +11,12 @@ function App() {
             return [...prev, user];
         });
     }
-    console.log(users)
     return (
         <>
             <Header count={users.length}/>
             <Main count={users.length} users={users} appendUser={appendUser}/>
             <Footer/>
+
         </>
     )
 }
