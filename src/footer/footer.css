@@ -1,0 +1,5 @@
+
+footer .active{
+    background-color: var(--text-color) !important;
+    color: var(--dark-bg) !important;
+}

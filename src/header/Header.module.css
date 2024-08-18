@@ -1,0 +1,19 @@
+.header {
+    padding: 30px;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.header2 {
+    width: 96vw;
+    position: fixed;
+    top: 0;
+    z-index:12;
+    padding: 10px;
+    background-color:var(--dark-bg);
+    display: flex;
+    justify-content: space-between;
+}
+.headerColor{
+    color: var(--btn-bg);
+}

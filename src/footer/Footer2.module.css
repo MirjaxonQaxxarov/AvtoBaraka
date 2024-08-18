@@ -1,0 +1,103 @@
+.footer {
+    width: 100%;
+    height:4rem;
+    position: fixed;
+    bottom: 0;
+    z-index:10;
+    background-color:var(--btn-bg);
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 3fr;
+}
+.footer  span{
+    margin: auto;
+    width: 2rem;
+    height: 2rem;
+    font-size:1rem;
+    color: var(--btn-bg);
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--dark-bg);
+    display: flex;
+    align-items: center;
+    padding: 0.2em;
+}
+
+.footer  span iconify-icon{
+    margin-left: 0.4rem;
+}
+.footer :first-child{
+    font-size: 1.1rem;
+}
+.footer :last-child {
+    width: 11rem;
+    border-radius: 2rem;
+}
+.footer :last-child div{
+    font-size: 12px;
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 90;
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+}
+.modal .modalContent{
+    color: var(--btn-bg);
+    background-color: var(--dark-bg);
+    padding: 3vh;
+}
+.modalContent form {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.modalContent span{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.modalContent textarea{
+    width: 90%;
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--text-color);
+    resize: vertical;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.modalContent input{
+    width: 90%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--text-color);
+    resize: vertical;
+    background-color: transparent;
+    color: var(--text-color);
+}
+.modalContent button{
+    width: 50vw !important;
+    margin-top: 10px;
+    margin-right: 1rem;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: 0;
+    cursor: pointer;
+}
+
+
+

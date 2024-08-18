@@ -1,0 +1,33 @@
+/* customStyles.css */
+
+/* Change label color */
+.ant-form-item-label > label {
+    color: #ff4d4f; /* Change this to your desired color */
+}
+
+/* Change input text color */
+.ant-input, .ant-input-password {
+    color: #ff4d4f; /* Change this to your desired color */
+}
+
+/* Change input border color */
+.ant-input, .ant-input-password {
+    border-color: #ff4d4f !important; /* Change this to your desired color */
+}
+
+/* Change input focus color */
+.ant-input:focus, .ant-input-password:focus {
+    border-color: #ff4d4f !important;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+
+/* Change button background color */
+.login-form-button {
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+}
+
+/* Change button text color */
+.login-form-button {
+    color: #ffffff;
+}

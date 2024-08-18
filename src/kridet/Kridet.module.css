@@ -1,0 +1,48 @@
+.header2 {
+    width: 96vw;
+    position: fixed;
+    top: 0;
+    z-index:12;
+    padding: 10px;
+    background-color:var(--dark-bg);
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainInfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    overflow-y: hidden;
+    height: 90vh;
+    z-index: 10;
+    padding: 1.5rem;
+    background-color:var(--dark-bg);
+    border-radius: 2rem 2rem 0 0 ;
+    gap: 1rem;
+}
+
+.mainInfo table td {
+    border: 1px solid var(--btn-bg);
+    padding: 5px;
+}
+.mainInfo table {
+    width: 88vw;
+    border-collapse: separate; /* bu yerda 'separate' qiymati kerak */
+    border-spacing: 0;
+}
+.mainInfo tr :nth-child(2) {
+    text-align: right;
+}
+.mainInfo tbody :first-child :first-child{
+    border-radius: 7px 0 0 0;
+}
+.mainInfo tbody :first-child :nth-child(2){
+    border-radius: 0 7px  0 0;
+}
+.mainInfo tbody :last-child :first-child{
+    border-radius: 0 0 0 7px ;
+}
+.mainInfo tbody :last-child :nth-child(2){
+    border-radius:0 0 7px 0 ;
+}

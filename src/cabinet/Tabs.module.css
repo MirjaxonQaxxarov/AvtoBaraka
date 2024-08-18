@@ -1,0 +1,14 @@
+.tab{
+    margin:1vh 4vw;
+    width: 90vw;
+    height: 73vh;
+    border: 1px solid var(--btn-bg) ;
+
+}
+.notFound{
+    margin: 35vh auto 0;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}

@@ -1,0 +1,129 @@
+.body {
+    height: 49rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.header2 {
+    width: 96vw;
+    position: fixed;
+    top: 0;
+    z-index:12;
+    padding: 20px;
+    background-color:var(--dark-bg);
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    height: 4rem;
+    background-color: var(--card-bg);
+    border-radius: 0.8rem;
+    padding: 10px;
+    margin: 0.2rem 1em;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    gap: 1rem;
+}
+
+.card iconify-icon{
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(140, 124, 124, 0.89);
+    font-size: 2rem;
+    color: var(--btn-bg);
+    justify-content: center;
+    border-radius: 50%;
+}
+.card *{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.Mbody {
+    height: 50rem;
+    display: flex;
+    margin-top: 6rem;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--dark-bg);
+}
+.Mbody span{
+    font-size: 0.7rem;
+}
+.Mbody b{
+    font-size: 1rem;
+}
+
+.Mbody img{
+    width: 19rem;
+    height: 19rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.myMessage {
+    width: 70vw;
+    background-color: var(--btn-bg);
+    border-radius: 0.8rem 0.8rem 0 0.8rem;
+    padding: 10px;
+    margin: 0.2rem 1em 0.2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    text-align: right;
+}
+
+.senderMessage {
+    width: 70vw;
+    background-color: rgba(140, 124, 124, 0.89);
+    border-radius: 0.8rem 0.8rem  0.8rem 0;
+    padding: 10px;
+    margin: 0.2rem 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+
+}
+
+
+
+.footer2{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    z-index:12;
+    padding: 0.5rem;
+    background-color: rgba(74, 63, 63, 0.89);
+    display: grid;
+    grid-template-columns: 0.9fr 5fr 1fr;
+}
+.footer2 textarea{
+    width: 90%;
+    height: 1.5rem;
+    border-radius: 1.8rem;
+    padding: 0.7rem;
+    background-color:transparent;
+    font-size: 1rem;
+    border: 1px solid var(--btn-bg);
+    color: var(--btn-bg);
+}
+.footer2 iconify-icon{
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--btn-bg);
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.last{
+    width: 100vw;
+    height: 4vh;
+    margin-top: 2rem;
+
+}

@@ -1,0 +1,18 @@
+.footer {
+    z-index:10;
+    background-color:var(--btn-bg);
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+}
+.footer  a{
+    margin: auto;
+    width: 2rem;
+    height: 2rem;
+    font-size:1rem;
+    color: var(--btn-bg);
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--dark-bg);
+    align-content: center;
+}
+
