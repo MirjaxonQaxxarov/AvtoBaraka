@@ -11,7 +11,7 @@ import {Icon} from "@iconify-icon/react";
 import {useReqWT} from "../http/req.js";
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
-import {Button, Popconfirm} from "antd";
+import {Button, notification, Popconfirm} from "antd";
 import Modal from "./Modal.jsx";
 
 // eslint-disable-next-line react/prop-types
@@ -22,7 +22,6 @@ export default function Card({controls = false, data = {}}) {
 
     const [open, setOpen] = useState(false);
     const [confirmLoading, setConfirmLoading] = useState(false);
-
     const showPopconfirm = (e) => {
         e.stopPropagation();
         setOpen(true);
@@ -31,7 +30,24 @@ export default function Card({controls = false, data = {}}) {
     const handleOk = (e) => {
         e.stopPropagation();
         setConfirmLoading(true);
+        reqWT('get', '/deletelisting/'+datax.id, {}).then((response) => {
+            if (parseInt(response) === 1) {
+                notification.info({
+                    message: t("success"),
+                    // description: response.message,
+                    placement: "topRight"
+                });
+                openModal()
+            }
+            else{
+                notification.error({
+                    message: t("error"),
+                    description: "",
+                    placement: "topRight"
+                });
+            }
 
+        })
         setTimeout(() => {
             setOpen(false);
             setConfirmLoading(false);
